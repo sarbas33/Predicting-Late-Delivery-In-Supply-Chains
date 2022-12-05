@@ -1,0 +1,11 @@
+C:\12133231\code\vb\PredictDelay\PredictDelay\bin\Debug\PredictDelay.exe.config
+C:\12133231\code\vb\PredictDelay\PredictDelay\bin\Debug\PredictDelay.exe
+C:\12133231\code\vb\PredictDelay\PredictDelay\bin\Debug\PredictDelay.pdb
+C:\12133231\code\vb\PredictDelay\PredictDelay\obj\Debug\PredictDelay.csproj.AssemblyReference.cache
+C:\12133231\code\vb\PredictDelay\PredictDelay\obj\Debug\PredictDelay.csproj.SuggestedBindingRedirects.cache
+C:\12133231\code\vb\PredictDelay\PredictDelay\obj\Debug\PredictDelay.Form1.resources
+C:\12133231\code\vb\PredictDelay\PredictDelay\obj\Debug\PredictDelay.Properties.Resources.resources
+C:\12133231\code\vb\PredictDelay\PredictDelay\obj\Debug\PredictDelay.csproj.GenerateResource.cache
+C:\12133231\code\vb\PredictDelay\PredictDelay\obj\Debug\PredictDelay.csproj.CoreCompileInputs.cache
+C:\12133231\code\vb\PredictDelay\PredictDelay\obj\Debug\PredictDelay.exe
+C:\12133231\code\vb\PredictDelay\PredictDelay\obj\Debug\PredictDelay.pdb

@@ -1,0 +1,31 @@
+started 
+importing  libraries 
+Importing data 
+setting input columns 
+divide input columns to numerical and categorical 
+dividing categorical columns into small and big 
+dividing end 
+importing MinMaxScaler 
+one-hot encoding start(for small number of unique values) 
+one-hot encoding end 
+target_guided_encoding started 
+target_guided_encoding completed 
+chi2 test start 
+chi2 test end 
+creating correlation matrix 
+removing correlated columns 
+VarianceThreshold start 
+ train test split for catboost  start 
+ train test split for catboost end 
+Logistic Regression model building start 
+Logistic Regression model building end 
+GaussianNB model building strat 
+GaussianNB model building end 
+RandomForestClassifier model building strat 
+RandomForestClassifier model building end 
+xgboost model building strat 
+xgboost model building end 
+lightgbm model building strat 
+lightgbm model building start 
+printing all score for model with high recall_score  
+All programme runned

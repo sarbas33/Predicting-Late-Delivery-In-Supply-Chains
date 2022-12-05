@@ -1,0 +1,145 @@
+status: Starting Proces
+status: Importing  libraries 
+status: Importing data
+status: Setting input columns 
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 180519 entries, 0 to 180518
+Data columns (total 34 columns):
+ #   Column                         Non-Null Count   Dtype  
+---  ------                         --------------   -----  
+ 0   Type                           180519 non-null  object 
+ 1   Days for shipment (scheduled)  180519 non-null  int64  
+ 2   Benefit per order              180519 non-null  float64
+ 3   Sales per customer             180519 non-null  float64
+ 4   Category Id                    180519 non-null  int64  
+ 5   Category Name                  180519 non-null  object 
+ 6   Customer City                  180519 non-null  object 
+ 7   Customer Country               180519 non-null  object 
+ 8   Customer Segment               180519 non-null  object 
+ 9   Customer State                 180519 non-null  object 
+ 10  Customer Street                180519 non-null  object 
+ 11  Department Id                  180519 non-null  int64  
+ 12  Department Name                180519 non-null  object 
+ 13  Latitude                       180519 non-null  float64
+ 14  Longitude                      180519 non-null  float64
+ 15  Market                         180519 non-null  object 
+ 16  Order City                     180519 non-null  object 
+ 17  Order Country                  180519 non-null  object 
+ 18  Order Item Discount            180519 non-null  float64
+ 19  Order Item Discount Rate       180519 non-null  float64
+ 20  Order Item Product Price       180519 non-null  float64
+ 21  Order Item Profit Ratio        180519 non-null  float64
+ 22  Order Item Quantity            180519 non-null  int64  
+ 23  Sales                          180519 non-null  float64
+ 24  Order Item Total               180519 non-null  float64
+ 25  Order Profit Per Order         180519 non-null  float64
+ 26  Order Region                   180519 non-null  object 
+ 27  Order State                    180519 non-null  object 
+ 28  Order Status                   180519 non-null  object 
+ 29  Product Card Id                180519 non-null  int64  
+ 30  Product Category Id            180519 non-null  int64  
+ 31  Product Name                   180519 non-null  object 
+ 32  Product Price                  180519 non-null  float64
+ 33  Shipping Mode                  180519 non-null  object 
+dtypes: float64(12), int64(6), object(16)
+memory usage: 46.8+ MB
+status: Categorizing input columns to numerical and categorical 
+status: Grouping categorical columns into small and big
+status: features separated
+status: importing MinMaxScaler
+status: one-hot encoding started(for small cardinality features)
+status: one-hot encoding completed 
+status: target_guided_encoding started
+status: target_guided_encoding completed 
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 180519 entries, 0 to 180518
+Data columns (total 53 columns):
+ #   Column                         Non-Null Count   Dtype  
+---  ------                         --------------   -----  
+ 0   Type                           180519 non-null  object 
+ 1   Days for shipment (scheduled)  180519 non-null  float64
+ 2   Benefit per order              180519 non-null  float64
+ 3   Sales per customer             180519 non-null  float64
+ 4   Category Id                    180519 non-null  float64
+ 5   Category Name                  180519 non-null  int64  
+ 6   Customer City                  180519 non-null  int64  
+ 7   Customer Country               180519 non-null  object 
+ 8   Customer Segment               180519 non-null  object 
+ 9   Customer State                 180519 non-null  int64  
+ 10  Customer Street                180519 non-null  int64  
+ 11  Department Id                  180519 non-null  float64
+ 12  Department Name                180519 non-null  int64  
+ 13  Latitude                       180519 non-null  float64
+ 14  Longitude                      180519 non-null  float64
+ 15  Market                         180519 non-null  object 
+ 16  Order City                     180519 non-null  int64  
+ 17  Order Country                  180519 non-null  int64  
+ 18  Order Item Discount            180519 non-null  float64
+ 19  Order Item Discount Rate       180519 non-null  float64
+ 20  Order Item Product Price       180519 non-null  float64
+ 21  Order Item Profit Ratio        180519 non-null  float64
+ 22  Order Item Quantity            180519 non-null  float64
+ 23  Sales                          180519 non-null  float64
+ 24  Order Item Total               180519 non-null  float64
+ 25  Order Profit Per Order         180519 non-null  float64
+ 26  Order Region                   180519 non-null  int64  
+ 27  Order State                    180519 non-null  int64  
+ 28  Order Status                   180519 non-null  int64  
+ 29  Product Card Id                180519 non-null  float64
+ 30  Product Category Id            180519 non-null  float64
+ 31  Product Name                   180519 non-null  int64  
+ 32  Product Price                  180519 non-null  float64
+ 33  Shipping Mode                  180519 non-null  object 
+ 34  Late_delivery_risk             180519 non-null  int64  
+ 35  Type_CASH                      180519 non-null  float64
+ 36  Type_DEBIT                     180519 non-null  float64
+ 37  Type_PAYMENT                   180519 non-null  float64
+ 38  Type_TRANSFER                  180519 non-null  float64
+ 39  Customer Country_EE. UU.       180519 non-null  float64
+ 40  Customer Country_Puerto Rico   180519 non-null  float64
+ 41  Customer Segment_Consumer      180519 non-null  float64
+ 42  Customer Segment_Corporate     180519 non-null  float64
+ 43  Customer Segment_Home Office   180519 non-null  float64
+ 44  Market_Africa                  180519 non-null  float64
+ 45  Market_Europe                  180519 non-null  float64
+ 46  Market_LATAM                   180519 non-null  float64
+ 47  Market_Pacific Asia            180519 non-null  float64
+ 48  Market_USCA                    180519 non-null  float64
+ 49  Shipping Mode_First Class      180519 non-null  float64
+ 50  Shipping Mode_Same Day         180519 non-null  float64
+ 51  Shipping Mode_Second Class     180519 non-null  float64
+ 52  Shipping Mode_Standard Class   180519 non-null  float64
+dtypes: float64(36), int64(12), object(5)
+memory usage: 73.0+ MB
+status: chi2 test started 
+status:chi2 test completed 
+status: creating correlation matrix 
+['Sales', 'Order Item Total', 'Order Profit Per Order', 'Product Card Id', 'Product Category Id', 'Product Price']
+status: removing correlated columns
+status: VarianceThreshold started 
+status: train test split for catboost  started
+status: train test split for catboost ended
+status: catboost model building skipped
+train_df.shape : (108311, 53)
+val_df.shape : (36104, 53)
+test_df.shape : (36104, 53)
+status: Logistic Regression model building started
+status: Logistic Regression model building completed
+status: GaussianNB model building strated
+status: GaussianNB model building completed
+status: RandomForestClassifier model building strated
+status: RandomForestClassifier model building completed
+status: xgboost model building strated
+[14:35:53] WARNING: C:/Users/Administrator/workspace/xgboost-win64_release_1.5.1/src/learner.cc:1115: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'binary:logistic' was changed from 'error' to 'logloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+status: xgboost model building completed
+status: lightgbm model building strated
+status: lightgbm model building started
+status: finding best model and getting results
+result1 Random Forest
+result2 0.8504823963226752
+result3 0.8674939064923555
+result4 0.8756045556191169
+result5 0.9022560420127539
+result6 0.8693142956041535
+status: Model Building Completed
+
